@@ -5,6 +5,7 @@ import Dashboard from "./pages/Dashboard";
 import Properties from "./pages/Properties";
 import Tenants from "./pages/Tenants";
 import Maintenance from "./pages/Maintenance";
+import NotFound from "./pages/NotFound";
 import SignIn from "./pages/SignIn";
 import Layout from "./components/ui/layout/Layout";
 import routes from "tempo-routes";
@@ -71,6 +72,7 @@ function App() {
               </ProtectedRoute>
             }
           />
+          <Route path="*" element={<NotFound />} />
         </Routes>
         {import.meta.env.VITE_TEMPO === "true" && useRoutes(routes)}
       </Suspense>
