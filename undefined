@@ -1,0 +1,7 @@
+import Dashboard from "@/pages/Dashboard";
+
+const DashboardPreview = () => {
+  return <Dashboard />;
+};
+
+export default DashboardPreview;
